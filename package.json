@@ -1,0 +1,17 @@
+{
+  "name": "svg-cli-editor",
+  "version": "0.1.0",
+  "description": "Lab1 Phase 1: 命令行 SVG 编辑器（CLI）。使用 Command 模式实现可撤销编辑，Composite 模式统一容器与叶子。",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "cli": "tsx src/main.ts",
+    "start": "tsx src/main.ts",
+    "demo": "tsx src/main.ts demo.session"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.4.0"
+  }
+}
