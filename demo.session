@@ -16,5 +16,18 @@ group bad c1 markers
 delete box
 undo
 save demo.svg
+# —— 扩展演示：覆盖作业第 6 节之外的其余已实现命令 ——
+scale c1 2
+show c1
+front c1
+back bg
+create rect r2 10 10 50 50 #00ff00
+addto markers r2
+tree
+ungroup markers
+tree
+canvas 1000 800
+canvas
+tree
 read sample.svg
 tree
