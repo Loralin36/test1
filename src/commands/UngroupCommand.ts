@@ -17,8 +17,8 @@ export class UngroupCommand implements Command {
     const shape = this.doc.lookup(this.id);
     if (!shape) throw new Error(`no such shape: ${this.id}`);
     if (!(shape instanceof Group)) throw new Error(`not a container: ${this.id}`);
-    if (shape.parent === this.doc.root) {
-      throw new Error(`cannot ungroup top-level container: ${this.doc.root.id}`);
+    if (shape === this.doc.root) {
+      throw new Error(`cannot ungroup canvas root`);
     }
 
     const parent = shape.parent as Group;
